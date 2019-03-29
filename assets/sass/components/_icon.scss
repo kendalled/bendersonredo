@@ -1,0 +1,36 @@
+///
+/// Standout by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Icon */
+
+	.icon {
+		@include icon;
+		border-bottom: none;
+		position: relative;
+
+		> .label {
+			display: none;
+		}
+
+		&.alt {
+
+			&:before {
+				background: _palette(fg-bold);
+				border-radius: 50%;
+				color: _palette(invert, fg-bold);
+				display: inline-block;
+				height: 3rem;
+				line-height: 3rem;
+				margin-right: 1rem;
+				text-align: center;
+				width: 3rem;
+			}
+
+			> .label {
+				display: inline-block;
+			}
+		}
+	}
